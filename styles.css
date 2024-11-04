@@ -1,0 +1,135 @@
+/* css styling for the index.html page */
+body, p, h2 { /* Selects the body, paragraph, and h2 elements */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default margin and padding */
+}
+h1 { /* Selects all <h1> elements */
+    text-align: center; /* Centers the text */
+    font-size: 2em; /* 2 times the default font size */
+    color: #0056b3; /* Blue */
+    font-weight: bold; /* Makes the text bold */
+    background-color: #e0f7ff; /* Optional: adds a subtle background */
+    padding: 0.5em; /* Adds padding for better spacing */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-bottom: 1em; /* Adds margin below the heading */
+}
+h2 { /* Selects all <h2> elements */
+    text-align: center; /* Centers the text */
+    font-size: 2em; /* 2 times the default font size */
+    color: #0056b3; /* Blue */
+    font-weight: bold; /* Makes the text bold */
+    background-color: #e0f7ff; /* Optional: adds a subtle background */
+    padding: 0.5em; /* Adds padding for better spacing */
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    margin-bottom: 1em; /* Adds margin below the heading */
+}
+body { /* Selects the <body> element */
+    font-family: 'Roboto', sans-serif; /* Sets the font family */
+    background-color: #e6f7ff; /* Soft, light blue background */
+    margin: 2em; /* Adds margin around the body */
+    color: #333; /* Dark gray text color */
+}
+fieldset { /* Selects all <fieldset> elements */
+    margin: 1.5em 0; /* Adds margin above and below the fieldset */
+    padding: 1.5em; /* Adds padding inside the fieldset */
+    border: 2px solid #d1d9e6; /* Adds a border */
+    border-radius: 8px; /* Adds rounded corners */
+    background: linear-gradient(135deg, #ffffff, #f7f9fc); /* Adds a gradient background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    max-width: 400px; /* Adjusted width for smaller form */
+    flex: 1; /* Makes the forms flexible in width */
+}
+legend { /* Selects all <legend> elements */
+    font-size: 1.3em; /* 1.3 times the default font size */
+    font-weight: bold; /* Makes the text bold */
+    color: #0056b3; /* Blue text color */
+    background-color: #e0f7ff; /* Light blue background */
+    padding: 0.25em 0.5em; /* Adds padding around the text */
+    border-radius: 5px; /* Adds rounded corners */
+    display: inline-block; /* Displays the legend inline */
+}
+input[type="submit"] { /* Selects all submit buttons */
+    background: linear-gradient(90deg, #0056b3, #007bff); /* Adds a gradient background */ 
+    color: #fff; /* White text color */
+    border: none; /* Removes the border */
+    padding: 0.5em 1em; /* Adds padding inside the button */
+    border-radius: 6px; /* Adds rounded corners */
+    display: inline-block; /* Displays the button inline */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */ 
+    font-weight: bold; /* Makes the text bold */
+    transition: all 0.3s ease-in-out; /* Adds a smooth transition effect */
+    width: 100%; /* Full width of the button */
+}
+input[type="submit"]:hover { /* Styles the button on hover */
+    background: linear-gradient(90deg, #004494, #0056b3); /* Changes the background on hover */
+    transform: scale(1.02); /* Scales the button on hover */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Adds a shadow on hover */
+}
+.table-container { /* Selects the table container */
+    max-height: 300px;  /* Adjustable height */
+    overflow-y: auto; /* Adds vertical scrolling */
+    border: 2px solid #d1d9e6; /* Adds a border */
+    border-radius: 8px; /* Adds rounded corners */
+    position: relative; /* Adds a relative position */
+}
+table { /* Selects all tables */
+    width: 100%; /* Makes the table full width */
+    border-collapse: collapse; /* Collapses the borders */
+} 
+th, td { /* Selects all table headers and data cells */
+    border: 1px solid #e0e0e0; /* Adds a border around cells */
+    padding: 0.75em; /* Adds padding inside cells */
+    text-align: left; /* Aligns text to the left */
+}
+th { /* Selects all table headers */
+    background-color: #0056b3; /* Blue background for headers */
+    color: #fff; /* White text color for headers */
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks the header to the top */
+    z-index: 10; /* Adds a z-index to the header */
+    font-weight: 600; /* Bold font weight for headers */
+    text-transform: uppercase; /* Uppercase text for headers */
+}
+tr:hover td { /* Styles table rows on hover */
+    background-color: #f1f5fc; /* Light blue background on hover */
+}
+tr:nth-child(even) { /* Selects even rows */
+    background-color: #f9fbfe; /* Alternate row background color */
+}
+tr:nth-child(odd) { /* Selects odd rows */
+    background-color: #ffffff; /* Alternate row background color */
+}
+select, input[type="text"] { /* Selects all select and text input fields */
+    width: calc(100% - 2em); /* Adjusts the width of the input fields */
+    padding: 0.5em; /* Adds padding inside the input fields */
+    border: 1px solid #ccc; /* Adds a border around the input fields */
+    border-radius: 4px; /* Adds rounded corners */
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); /* Adds an inset shadow */
+    margin: 0.5em 0; /* Adds margin above and below the input fields */
+    transition: border 0.2s; /* Adds a transition effect */
+}
+select:focus, input[type="text"]:focus { /* Styles the input fields on focus */
+    border-color: #0056b3; /* Changes the border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Adds a shadow on focus */
+}
+.form-container { /* Selects the form container */
+    display: flex; /* Displays the forms in a flex layout */
+    justify-content: space-between; /* Aligns the forms to the left and right */
+    gap: 20px; /* Space between the forms */
+    flex-wrap: wrap; /* Allows the forms to wrap on smaller screens */
+}
+footer { /* Selects the footer element */
+    text-align: center; /* Centers the text */
+    padding: 1em 0; /* Adds padding above and below the text */
+    margin-top: 2em; /* Adds margin above the footer */
+    background-color: #0056b3; /* Blue background */
+    color: #fff; /* White text color */
+    border-top: 2px solid #004494; /* Adds a border on top */
+}
+@media (max-width: 768px) { /* Media query for smaller screens */
+    .form-container { /* Selects the form container */
+        flex-direction: column; /* Stacks the form elements vertically */
+    }
+}
